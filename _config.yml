@@ -1,3 +1,6 @@
-theme: jekyll-theme-minimal
-title: Vallisri's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: AI ML Bites
+description: My technical notes and blog posts
+theme: minima
+
+author:
+  name: Vallisri S
