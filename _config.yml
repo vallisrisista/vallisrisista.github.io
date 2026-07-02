@@ -7,7 +7,6 @@ theme: minima
 author:
   name: "Vallisri Sista"
 
-show_excerpts: true
 
 header_pages:
   - about.md
