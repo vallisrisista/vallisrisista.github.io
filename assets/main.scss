@@ -1,8 +1,9 @@
 ---
 ---
 
-@import "minima";
+@import "{{ site.theme }}";
 
+/* TEST STYLE */
 body {
   background-color: yellow !important;
 }
@@ -16,12 +17,4 @@ body {
 .site-title:visited,
 .site-nav .page-link {
   color: white !important;
-}
-
-.post-list > li {
-  background: white !important;
-  padding: 20px !important;
-  margin-bottom: 20px !important;
-  border-radius: 12px !important;
-  border-left: 5px solid #2563eb !important;
 }
