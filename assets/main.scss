@@ -4,139 +4,218 @@
 @import "{{ site.theme }}";
 
 /* ------------------------------
-   Base typography
+   Design tokens
 ------------------------------ */
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.75;
-  color: #222;
-}
+:root {
+  --text-main: #172033;
+  --text-muted: #64748b;
+  --text-soft: #475569;
 
-.wrapper {
-  max-width: 880px;
+  --accent-blue: #2563eb;
+  --accent-blue-dark: #1d4ed8;
+  --accent-green: #059669;
+  --accent-teal: #0f766e;
+
+  --border-light: #e2e8f0;
+  --border-mid: #cbd5e1;
+
+  --surface-soft: #f8fafc;
+  --surface-card: #ffffff;
 }
 
 /* ------------------------------
-   Header / navigation
+   Base layout and typography
+------------------------------ */
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-main);
+}
+
+.wrapper {
+  max-width: 940px;
+}
+
+/* ------------------------------
+   Header / top navigation
 ------------------------------ */
 
 .site-header {
-  border-top: none;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 10px 0;
+  border-top: 4px solid var(--accent-blue);
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 0;
 }
 
 .site-title,
 .site-title:visited {
-  font-weight: 700;
-  letter-spacing: -0.4px;
-  color: #111;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: var(--text-main);
 }
 
 .site-title:hover {
+  color: var(--accent-blue);
   text-decoration: none;
 }
 
+.site-nav {
+  line-height: 56px;
+}
+
 .site-nav .page-link {
-  color: #333;
-  font-weight: 500;
+  color: var(--text-soft);
+  font-size: 16px;
+  font-weight: 650;
+  margin-left: 24px;
 }
 
 .site-nav .page-link:hover {
-  color: #0056b3;
+  color: var(--accent-blue);
   text-decoration: none;
 }
 
 /* ------------------------------
-   Homepage post list
+   Homepage intro
+------------------------------ */
+
+.home {
+  padding-top: 24px;
+}
+
+.home h1,
+.page-heading {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 850;
+  letter-spacing: -1.2px;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.home > p {
+  font-size: 18px;
+  color: var(--text-soft);
+  max-width: 760px;
+}
+
+/* ------------------------------
+   Post list
 ------------------------------ */
 
 .post-list {
   margin-left: 0;
+  margin-top: 28px;
 }
 
 .post-list > li {
   list-style: none;
-  padding: 24px 0;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 26px 0 30px 0;
+  border-bottom: 1px solid var(--border-light);
 }
 
-.post-list > li:last-child {
-  border-bottom: none;
+.post-list > li:first-child {
+  border-top: 1px solid var(--border-light);
 }
 
 .post-meta {
   font-size: 14px;
-  color: #666;
+  color: var(--text-muted);
+  font-weight: 500;
   letter-spacing: 0.2px;
+  margin-bottom: 6px;
 }
 
 .post-link {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.3;
-  color: #111;
-  letter-spacing: -0.5px;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: var(--accent-blue);
 }
 
 .post-link:hover {
-  color: #0056b3;
+  color: var(--accent-green);
   text-decoration: none;
 }
 
+/* Post excerpts on home */
+.post-list p {
+  color: var(--text-soft);
+  font-size: 16px;
+  line-height: 1.65;
+  margin-top: 10px;
+}
+
 /* ------------------------------
-   Post pages
+   Individual post page
 ------------------------------ */
 
+.post-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
 .post-title {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  color: #111;
-  margin-bottom: 10px;
+  font-size: 46px;
+  line-height: 1.12;
+  font-weight: 850;
+  letter-spacing: -1.4px;
+  color: var(--text-main);
+  margin-bottom: 12px;
 }
 
 .post-content {
-  margin-top: 32px;
+  margin-top: 28px;
+  font-size: 17px;
+}
+
+.post-content p {
+  margin-bottom: 20px;
 }
 
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  color: #111;
-  font-weight: 750;
+  color: var(--text-main);
+  font-weight: 800;
   line-height: 1.3;
-  letter-spacing: -0.4px;
-  margin-top: 36px;
-  margin-bottom: 14px;
+  letter-spacing: -0.5px;
 }
 
 .post-content h1 {
   font-size: 34px;
-  border-bottom: 1px solid #e5e7eb;
+  margin-top: 44px;
+  margin-bottom: 18px;
   padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-light);
 }
 
 .post-content h2 {
   font-size: 28px;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 6px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent-blue);
 }
 
 .post-content h3 {
   font-size: 23px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--accent-teal);
 }
 
 .post-content h4 {
   font-size: 19px;
-}
-
-.post-content p {
-  margin-bottom: 18px;
+  margin-top: 26px;
+  margin-bottom: 10px;
 }
 
 /* ------------------------------
@@ -144,22 +223,22 @@ body {
 ------------------------------ */
 
 a {
-  color: #0056b3;
+  color: var(--accent-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: #003f88;
+  color: var(--accent-green);
   text-decoration: underline;
 }
 
 .post-content a {
-  font-weight: 500;
-  border-bottom: 1px solid #b8d4f2;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.28);
 }
 
 .post-content a:hover {
-  border-bottom-color: #0056b3;
+  border-bottom-color: var(--accent-green);
   text-decoration: none;
 }
 
@@ -169,36 +248,45 @@ a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  padding-left: 28px;
 }
 
 .post-content li {
   margin-bottom: 8px;
 }
 
+.post-content li::marker {
+  color: var(--accent-blue);
+}
+
 /* ------------------------------
-   Code blocks
+   Code and preformatted blocks
 ------------------------------ */
 
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.9em;
-  padding: 2px 5px;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
+  font-size: 0.88em;
+  color: #0f172a;
+  padding: 2px 6px;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  background-color: var(--surface-soft);
 }
 
 pre {
-  padding: 18px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
   overflow-x: auto;
-  line-height: 1.55;
+  line-height: 1.6;
+  background-color: var(--surface-soft);
 }
 
 pre code {
   padding: 0;
   border: none;
+  background: transparent;
   font-size: 14px;
 }
 
@@ -207,10 +295,11 @@ pre code {
 ------------------------------ */
 
 blockquote {
-  color: #444;
-  border-left: 4px solid #cbd5e1;
+  color: var(--text-soft);
+  border-left: 4px solid var(--accent-green);
   padding-left: 18px;
   font-style: normal;
+  margin: 24px 0;
 }
 
 /* ------------------------------
@@ -220,18 +309,20 @@ blockquote {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 24px 0;
+  margin: 28px 0;
   font-size: 15px;
 }
 
 th,
 td {
-  border: 1px solid #e5e7eb;
-  padding: 10px 12px;
+  border: 1px solid var(--border-light);
+  padding: 11px 13px;
 }
 
 th {
-  font-weight: 700;
+  font-weight: 750;
+  color: var(--text-main);
+  background-color: var(--surface-soft);
 }
 
 /* ------------------------------
@@ -239,13 +330,29 @@ th {
 ------------------------------ */
 
 .site-footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 28px 0;
+  border-top: 1px solid var(--border-light);
+  padding: 32px 0;
 }
 
 .footer-heading {
-  font-weight: 700;
-  color: #111;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.contact-list,
+.social-media-list {
+  color: var(--text-muted);
+}
+
+.footer-col-wrapper {
+  color: var(--text-muted);
+}
+
+/* Fix author object showing weird text */
+.p-name {
+  color: var(--text-muted);
+  font-size: 15px;
 }
 
 /* ------------------------------
@@ -257,12 +364,22 @@ th {
     font-size: 16px;
   }
 
+  .site-title,
+  .site-title:visited {
+    font-size: 24px;
+  }
+
+  .home h1,
+  .page-heading {
+    font-size: 31px;
+  }
+
   .post-title {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .post-link {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .post-content h1 {
@@ -271,5 +388,10 @@ th {
 
   .post-content h2 {
     font-size: 24px;
+  }
+
+  .site-nav .page-link {
+    margin-left: 14px;
+    font-size: 15px;
   }
 }
