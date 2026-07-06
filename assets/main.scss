@@ -471,3 +471,160 @@ hr {
   }
 }
 
+/* =========================================================
+   FINAL FIX: readable code blocks for Minima/Jekyll
+   Put this at the VERY END of assets/main.scss
+========================================================= */
+
+/* Main code block container */
+pre,
+.highlight,
+div.highlight,
+figure.highlight {
+  background: #0f172a !important;
+  color: #e5e7eb !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 14px !important;
+  padding: 18px 20px !important;
+  overflow-x: auto !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.16) !important;
+}
+
+/* Code inside code blocks */
+pre code,
+.highlight code,
+div.highlight code,
+figure.highlight code {
+  background: transparent !important;
+  color: #e5e7eb !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+/* Force all syntax-highlighted spans to be readable */
+.highlight span,
+.highlight .c,
+.highlight .err,
+.highlight .k,
+.highlight .o,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs,
+.highlight .gd,
+.highlight .ge,
+.highlight .gr,
+.highlight .gh,
+.highlight .gi,
+.highlight .go,
+.highlight .gp,
+.highlight .gs,
+.highlight .gu,
+.highlight .gt,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .m,
+.highlight .s,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv,
+.highlight .ow,
+.highlight .w,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss,
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .il {
+  color: #e5e7eb !important;
+  background: transparent !important;
+}
+
+/* Add readable colors for common Python syntax */
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .ow {
+  color: #93c5fd !important;
+  font-weight: 700 !important;
+}
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #86efac !important;
+}
+
+.highlight .m,
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo,
+.highlight .il {
+  color: #fbbf24 !important;
+}
+
+.highlight .nf,
+.highlight .nc {
+  color: #67e8f9 !important;
+  font-weight: 700 !important;
+}
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cs {
+  color: #94a3b8 !important;
+  font-style: italic !important;
+}
+
+/* Inline code, not full blocks */
+p code,
+li code,
+td code {
+  background: #e0f2fe !important;
+  color: #0f172a !important;
+  border: 1px solid #bae6fd !important;
+  border-radius: 5px !important;
+  padding: 2px 6px !important;
+}
+
