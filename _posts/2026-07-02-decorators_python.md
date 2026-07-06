@@ -88,7 +88,7 @@ vanilla_cake()
 chocolate_cake()
 butterscotch_cake()
 ```
-Output:
+***Output:***
 Baking vanilla cake
 spread whipping cream on the given cake
 Baking chocolate cake
@@ -129,8 +129,8 @@ chocolate_cake(1000)
 butterscotch_cake(1000)   
 ```
 
-Output:
-
+***Output:***
+```text
 Weight= 500  grams
 Baking vanilla cake
 spread whipping cream on  500  grams  cake
@@ -138,4 +138,4 @@ Baking chocolate cake
 spread whipping cream on  1000  grams  cake
 Baking butterscotch cake
 spread whipping cream on  1000  grams  cake
-
+```
