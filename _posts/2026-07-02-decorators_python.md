@@ -22,6 +22,7 @@ Here is a sample code for the above process.
 
 Each function below specifically has process to bake that particular cake.
 
+```python
 def vanilla_cake():
     print("Baking vanilla cake")
 
@@ -31,19 +32,21 @@ def chocolate_cake():
     
 def butterscotch_cake():
     print("Baking butterscotch cake”)
+```
 
 Now, we want to decorate it with whipping cream.
 
-
+```python
 def whipping_cream():        
 	print("spread whipping cream on the given cake")
+```
 
 One way of doing this without decorators, is by just calling the whipping_cream function inside each cake.
 
+```python
 def vanilla_cake():
     print("Baking vanilla cake”)
     whipping_cream()
-
 
 def chocolate_cake():
     print("Baking chocolate cake")   
@@ -52,20 +55,23 @@ def chocolate_cake():
 def butterscotch_cake():
     print("Baking butterscotch cake”)
     whipping_cream()
+```
 
 But, here we are changing the actual function to enhance it. To d it with out touching the function from inside, we use decorators.
 
 In a decorator, we accept the actual function and wrap it with our enhancement and return it.
 
+```python
 def whipping_cream(func):
     def wrap():
         func()
         print("spread whipping cream on the given cake")
      
     return wrap
+```
 
 To decorate a function. With it, we simply use @ annotation while defining the function.
-
+```python
 @whipping_cream
 def vanilla_cake():
     print("Baking vanilla cake")
@@ -81,7 +87,7 @@ def butterscotch_cake():
 vanilla_cake()
 chocolate_cake()
 butterscotch_cake()
-
+'''
 Output:
 Baking vanilla cake
 spread whipping cream on the given cake
@@ -121,6 +127,7 @@ def butterscotch_cake(g):
 vanilla_cake(500)
 chocolate_cake(1000)
 butterscotch_cake(1000)   
+```
 
 Output:
 
