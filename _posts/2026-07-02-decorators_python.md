@@ -87,7 +87,7 @@ def butterscotch_cake():
 vanilla_cake()
 chocolate_cake()
 butterscotch_cake()
-'''
+```
 Output:
 Baking vanilla cake
 spread whipping cream on the given cake
@@ -100,7 +100,7 @@ spread whipping cream on the given cake
 We can pass arguments to a decorator.
 
 Here is code where the functions accept the weight of cake in grams as argument for the function.
-
+```python
 def whipping_cream(func):
     def wrap(g):
         func(g)
