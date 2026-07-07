@@ -1,15 +1,15 @@
 ---
 layout: page
-title:
+title: Hello There! 
 ---
 
-# Hello There! I'm Vallisri.
 
+I am Vallisri Sista.
 This is my personal blog where I share my learnings on concepts of  **AI, Machine Learning, Python Java, Backend Development**.
 
 <div class="hero-buttons">
   <a href="/projects/" class="btn-primary">View Projects</a>
-  <a href="/blog/" class="btn-secondary">Read Blog</a>
+  <a href="/blogs/" class="btn-secondary">Read Blogs</a>
   <a href="/resume/" class="btn-secondary">Resume</a>
 </div>
 
