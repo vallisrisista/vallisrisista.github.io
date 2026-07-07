@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Home
 ---
 
-# Hi, I'm Vallisri Sista
+# Hello There! I'm Vallisri.
 
 This is my personal blog where I share my learnings on concepts of  **AI, Machine Learning, Python Java, Backend Development**.
 
