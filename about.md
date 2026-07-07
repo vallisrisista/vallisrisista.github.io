@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About Me
-
 I am a software developer interested in **backend development, AI, Machine Learning, Generative AI, and embedded systems**.
 
 This website is where I publish my learning on various topics.
