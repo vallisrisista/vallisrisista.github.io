@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Blog
-permalink: /blog/
+title: Blogs
+permalink: /blogs/
 ---
 
-# Blog
 
 Technical notes on AI, Machine Learning, Python, Java, and backend  development.
 
