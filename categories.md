@@ -4,7 +4,6 @@ title: Categories
 permalink: /categories/
 ---
 
-# Categories
 
 {% assign categories = site.categories | sort %}
 
