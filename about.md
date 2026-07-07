@@ -4,7 +4,21 @@ title: About
 permalink: /about/
 ---
 
-I am wokring as a software engineer at Accenture. 
-I try to share my learning thtough this blog.
+# About Me
 
-You may find AI ML concepts, programming, projects, etc here.
+I am a software developer interested in **backend development, AI, Machine Learning, Generative AI, and embedded systems**.
+
+This website is where I publish my learning on various topics.
+
+
+
+
+## Technical Interests
+
+- AI and Machine Learning
+- RAG and LLM applications
+- Java backend development
+- Spring Boot APIs
+- Python programming
+- Embedded systems
+- Middleware systems
