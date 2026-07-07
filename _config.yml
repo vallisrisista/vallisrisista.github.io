@@ -1,24 +1,22 @@
-author:
-  name: Vallisri S
-title: AI ML Bites
-description: "Notes on AI, Machine Learning, Backend Development, Embedded Systems, and Software Engineering"
+title: "AI ML Bites"
+description: "AI, Machine Learning,Python, Java, Backend Development "
+
 theme: minima
 
-author:
-  name: "Vallisri Sista"
+author: "Vallisri Sista"
 
+show_excerpts: true
 
 header_pages:
   - about.md
-  - archive.md
+  - resume.md
+  - projects.md
+  - blogs.md
   - categories.md
-  - tags.md
-
-minima:
-  date_format: "%b %-d, %Y"
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
 include:
   - assets
