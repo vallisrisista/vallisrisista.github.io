@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a software developer interested in **backend development, AI, Machine Learning, Generative AI, and embedded systems**.
+I am a software developer interested in **backend development, AI, Machine Learning, Generative AI, and middleware systems**.
 
 This website is where I publish my learning on various topics.
 
@@ -18,5 +18,4 @@ This website is where I publish my learning on various topics.
 - Java backend development
 - Spring Boot APIs
 - Python programming
-- Embedded systems
 - Middleware systems
