@@ -5,7 +5,7 @@ title: Home
 
 # Hi, I'm Vallisri Sista
 
-This is my personal blog where I share my learnings on concepts of  ** AI, Machine Learning, Python Java, Backend Development **.
+This is my personal blog where I share my learnings on concepts of  **AI, Machine Learning, Python Java, Backend Development**.
 
 <div class="hero-buttons">
   <a href="/projects/" class="btn-primary">View Projects</a>
