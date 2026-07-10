@@ -570,3 +570,95 @@ th {
     font-size: 14px;
   }
 }
+/* =========================================================
+   FIX: Homepage hero readability and code card
+========================================================= */
+
+.hero-section {
+  margin-top: 32px;
+}
+
+.hero-section,
+.hero-section * {
+  box-sizing: border-box;
+}
+
+.hero-section .hero-eyebrow {
+  color: #93c5fd !important;
+  opacity: 1 !important;
+}
+
+.hero-section h1 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero-section .hero-subtitle {
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+.hero-section .hero-subtitle strong {
+  color: #ffffff !important;
+}
+
+.hero-section p {
+  color: #cbd5e1 !important;
+}
+
+.hero-card {
+  color: #dbeafe !important;
+}
+
+.hero-card pre {
+  background: transparent !important;
+  color: #dbeafe !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 18px 0 0 0 !important;
+  margin: 0 !important;
+  white-space: pre-wrap;
+}
+
+.hero-card code {
+  background: transparent !important;
+  color: #dbeafe !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+}
+
+.hero-card-dots {
+  margin-bottom: 10px;
+}
+
+.hero-card-dots span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.hero-card-dots span:nth-child(1) {
+  background: #ef4444;
+}
+
+.hero-card-dots span:nth-child(2) {
+  background: #f59e0b;
+}
+
+.hero-card-dots span:nth-child(3) {
+  background: #22c55e;
+}
+
+/* Reduce oversized empty top spacing from Minima page layout */
+.page-content {
+  padding-top: 0 !important;
+}
+
+.page .post-header {
+  display: none;
+}
