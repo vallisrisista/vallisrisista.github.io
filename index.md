@@ -1,11 +1,19 @@
 ---
 layout: page
-title: Hello There! 
+title:
 ---
 
+<section class="hero-section">
 
-I am Vallisri Sista.
-This is my personal blog where I share my learnings on concepts of  **AI, Machine Learning, Python Java, Backend Development**.
+<div class="hero-content">
+
+<p class="hero-eyebrow">Hello, I'm Vallisri.</p>
+
+<h1>AI, ML & Backend Developer</h1>
+
+<p class="hero-subtitle">
+I write practical notes on <strong>AI, Machine Learning, Python, Java, Backend Development</strong>, and technical project learnings.
+</p>
 
 <div class="hero-buttons">
   <a href="/projects/" class="btn-primary">View Projects</a>
@@ -13,45 +21,28 @@ This is my personal blog where I share my learnings on concepts of  **AI, Machin
   <a href="/resume/" class="btn-secondary">Resume</a>
 </div>
 
-## Focus Areas
-
-<div class="skill-grid">
-  <span>AI & Machine Learning</span>
-  <span>Generative AI</span>
+<div class="hero-tags">
+  <span>AI</span>
+  <span>Machine Learning</span>
   <span>RAG</span>
   <span>Java</span>
-  <span>Spring Boot</span>
   <span>Python</span>
-  <span>Backend Development</span>
+  <span>Spring Boot</span>
 </div>
-
-## Featured Projects
-
-<div class="card-grid">
-
-<div class="info-card">
-<h3>Password Rotation Agent</h3>
-<p>Agentic AI system using Java Spring Boot, LangChain4j, and LLM tools to automate password rotation workflows.</p>
-<a href="/projects/">View project</a>
-</div>
-
-<div class="info-card">
-<h3>RAG Document Generator</h3>
-<p>Retrieval-Augmented Generation workflow for generating structured technical documents from existing files.</p>
-<a href="/projects/">View project</a>
-</div>
-
-
 
 </div>
 
-## Latest Blog Posts
+<div class="hero-visual">
+  <div class="hero-card">
+    <span class="code-dot"></span>
+    <span class="code-dot"></span>
+    <span class="code-dot"></span>
 
-<ul class="latest-posts">
-{% for post in site.posts limit:5 %}
-  <li>
-    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+```text
+> learning.log
+
+AI       : notes
+ML       : concepts
+Java     : backend
+Python   : examples
+Projects : portfolio
