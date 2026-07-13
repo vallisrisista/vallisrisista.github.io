@@ -202,3 +202,60 @@ pre > code {
 .highlight .c, .highlight .c1, .highlight .cm                 { color: #676E95; font-style: italic; } // comments
 .highlight .mi, .highlight .mf, .highlight .m                 { color: #F78C6C; } // numbers
 .highlight .nf, .highlight .nc                                { color: #82AAFF; } // function/class names
+
+.hero { max-width: 640px; }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(29, 158, 117, 0.1);
+  border: 1px solid rgba(29, 158, 117, 0.3);
+  color: #5DCAA5;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5DCAA5;
+  }
+}
+
+.eyebrow {
+  color: $text-muted;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+h1 { font-size: 48px; margin-bottom: 4px; }
+.accent-text { color: $accent; }
+
+.role {
+  font-size: 18px;
+  color: $accent;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.intro {
+  color: $text-muted;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  margin-top: 28px;
+
+  a {
+    color: $text-muted;
+    font-size: 20px;
+    &:hover { color: $accent; }
+  }
+}
