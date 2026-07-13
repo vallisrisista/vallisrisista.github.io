@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Hello There! I'm Vallisri.
+title: Hi, I'm Vallisri.
 ---
 
-This is my personal blog where I share my learnings on **AI, Machine Learning, Python, Java, Backend Development**, and technical projects.
+I write about AI, machine learning, and backend systems — and share the projects I build along the way.
 
 <div class="hero-buttons">
   <a href="/projects/" class="btn-primary">View Projects</a>
