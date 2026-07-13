@@ -169,3 +169,36 @@ h2 {
   color: $text-muted;
   font-size: 14px;
 }
+
+// Code blocks — override Minima's light background
+.highlight, .highlighter-rouge .highlight, pre.highlight {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+pre, code {
+  background: $bg-card;
+  color: $text-primary;
+  font-size: 14px;
+}
+
+code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid $border-color;
+}
+
+pre > code {
+  border: none;
+  padding: 0;
+}
+
+// Re-tune syntax token colors for dark background (originals were tuned for white bg)
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .nb  { color: #C792EA; } // keywords
+.highlight .s, .highlight .s1, .highlight .s2                 { color: #ECC48D; } // strings
+.highlight .c, .highlight .c1, .highlight .cm                 { color: #676E95; font-style: italic; } // comments
+.highlight .mi, .highlight .mf, .highlight .m                 { color: #F78C6C; } // numbers
+.highlight .nf, .highlight .nc                                { color: #82AAFF; } // function/class names
