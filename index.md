@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi, I'm Vallisri.
+title: Vallisri Sista
 ---
 <div class="hero">
   <span class="status-badge"><span class="dot"></span> Open to opportunities</span>
