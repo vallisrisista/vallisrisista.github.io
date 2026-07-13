@@ -2,34 +2,24 @@
 layout: page
 title: Hi, I'm Vallisri.
 ---
+<div class="hero">
+  <span class="status-badge"><span class="dot"></span> Open to opportunities</span>
 
-I write about AI, machine learning, and backend systems — and share the projects I build along the way.
+  <p class="eyebrow">Hi there</p>
+  <h1>I'm <span class="accent-text">Vallisri</span></h1>
+  <p class="role">Backend Developer · AI/ML Engineer</p>
 
-<div class="hero-buttons">
-  <a href="/projects/" class="btn-primary">View Projects</a>
-  <a href="/blogs/" class="btn-secondary">Read Blogs</a>
-  <a href="/resume/" class="btn-secondary">Resume</a>
+  <p class="intro">I write about AI, machine learning, and backend systems and share the projects I build along the way.</p>
+
+  <div class="hero-buttons">
+    <a href="/projects/" class="btn-primary">View Projects</a>
+    <a href="/blogs/" class="btn-secondary">Read Blogs</a>
+    <a href="/resume/" class="btn-secondary">Resume</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/vallisrisista" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+    <a href="https://linkedin.com/in/yourhandle" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+    <a href="mailto:you@email.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+  </div>
 </div>
-
-## Focus Areas
-
-<div class="skill-grid">
-  <span>AI</span>
-  <span>Machine Learning</span>
-  <span>RAG</span>
-  <span>Python</span>
-  <span>Java</span>
-  <span>Spring Boot</span>
-  <span>Backend Development</span>
-</div>
-
-## Latest Blogs
-
-<ul class="latest-posts">
-{% for post in site.posts limit:5 %}
-  <li>
-    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
