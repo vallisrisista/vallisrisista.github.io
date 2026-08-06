@@ -12,8 +12,8 @@ title: Vallisri Sista
   <p class="intro">I write about AI, machine learning, and backend systems and share the projects I build along the way.</p>
 
   <div class="hero-buttons">
-    <a href="/projects/" class="btn-primary">View Projects</a>
-    <a href="/blogs/" class="btn-secondary">Read Blogs</a>
+    <a href="/projects/" class="btn-secondary">View Projects</a>
+    <a href="/blogs/" class="btn-primary">Read Blogs</a>
     <a href="/resume/" class="btn-secondary">Resume</a>
   </div>
 
