@@ -14,7 +14,7 @@ title: Vallisri Sista
   <div class="hero-buttons">
     <a href="/projects/" class="btn-secondary">View Projects</a>
     <a href="/blogs/" class="btn-primary">Read Blogs</a>
-    <a href="/resume/" class="btn-secondary">Resume</a>
+    <a href="/assets/Vallisri_Sista.pdf/" class="btn-secondary">Resume</a>
   </div>
 
   <div class="social-icons">
