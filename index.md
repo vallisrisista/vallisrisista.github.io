@@ -12,9 +12,8 @@ title: Vallisri Sista
   <p class="intro">I write about AI, machine learning, and backend systems and share the projects I build along the way.</p>
 
   <div class="hero-buttons">
-    <a href="/projects/" class="btn-secondary">View Projects</a>
-    <a href="/blogs/" class="btn-primary">Read Blogs</a>
-    <a href="/assets/Vallisri_Sista.pdf/" class="btn-secondary">Resume</a>
+<a href="https://incident-postmortem.duckdns.org" class="btn-secondary" target="_blank">View Projects</a>    <a href="/blogs/" class="btn-primary">Read Blogs</a>
+    <a href="/assets/Vallisri_Sista.pdf" class="btn-secondary">Resume</a>
   </div>
 
   <div class="social-icons">
