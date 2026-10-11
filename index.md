@@ -13,7 +13,7 @@ title: Vallisri Sista
 
   <div class="hero-buttons">
 <a href="https://incident-postmortem.duckdns.org" class="btn-secondary" target="_blank">View Projects</a>    <a href="/blogs/" class="btn-primary">Read Blogs</a>
-    <a href="/assets/Vallisri_Sista.pdf" class="btn-secondary">Resume</a>
+    <a href="/assets/Vallisri_Sista_GenAI.pdf" class="btn-primary">Resume</a>
   </div>
 
   <div class="social-icons">
